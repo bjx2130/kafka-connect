@@ -1,19 +1,26 @@
 # kafka-connect
-执行如下命令启动connect
-sudo ./connect-distributed.sh ../config/connect-distributed.properties 【../config/connect-mysql-source.properties】
 
-注意：如果启动有异常 Caused by: java.lang.ClassNotFoundException: javax.xml.bind.Validation
-  引入下面依赖即可
-      jaxb-api maven地址：http://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
-      jaxb-impl maven地址：http://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl
-      jaxb-core maven地址：http://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core
-      activation maven地址：http://mvnrepository.com/artifact/javax.activation/activation
-  将jar包复制到 /kafka_2.12-1.0.0/libs 下即可
+1.下载Kafka Connect 包
+	https://www.confluent.io/download/
+
+2.将需要 mysql-connector-java-8.0.11.jar 包复制到${kafka_Home}/libs/下
+
+3.到目录${kafka_Home}/bin 执行如下命令启动connect
+	
+	sudo ./connect-distributed.sh ../config/connect-distributed.properties 【../config/connect-mysql-source.properties】
+
+	注意：如果启动有异常 Caused by: java.lang.ClassNotFoundException: javax.xml.bind.Validation
+	  引入下面依赖即可
+	      jaxb-api maven地址：http://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+	      jaxb-impl maven地址：http://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl
+	      jaxb-core maven地址：http://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core
+	      activation maven地址：http://mvnrepository.com/artifact/javax.activation/activation
+	  将jar包复制到 /kafka_2.12-1.0.0/libs 下即可
   
   
 ==============================横线以下是api调用实例====================
   
-创建JdbcSourceConnector-connector
+4.创建JdbcSourceConnector-connector
 
 	url:http://localhost:8083/connectors
 	
