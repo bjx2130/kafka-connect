@@ -13,7 +13,8 @@ sudo ./connect-distributed.sh ../config/connect-distributed.properties 【../con
   
 ==============================横线以下是api调用实例====================
   
-创建JdbcSourceConnector-connector 
+创建JdbcSourceConnector-connector
+
 	url:http://localhost:8083/connectors
 	
 	method:POST
