@@ -11,7 +11,7 @@ sudo ./connect-distributed.sh ../config/connect-distributed.properties 【../con
   将jar包复制到 /kafka_2.12-1.0.0/libs 下即可
   
   
-==============================横线以下是api调用实例=========================================================  
+==============================横线以下是api调用实例====================
   
 创建JdbcSourceConnector-connector 
 	url:http://localhost:8083/connectors 
@@ -36,7 +36,7 @@ sudo ./connect-distributed.sh ../config/connect-distributed.properties 【../con
 	url:http://localhost:8083/connectors
 	method:GET
 
-=======================================================================================  
+============================================================
 
 
 分布式 REST API 
