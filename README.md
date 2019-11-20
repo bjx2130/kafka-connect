@@ -1,7 +1,7 @@
 # kafka-connect
 
 1.下载Kafka Connect 包
-	https://www.confluent.io/download/
+	https://www.confluent.io/hub
 
 2.将需要 mysql-connector-java-8.0.11.jar 包复制到${kafka_Home}/libs/下
 
